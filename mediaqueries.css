@@ -1,0 +1,9 @@
+/* Hide desktop navigation bar and show hamburger menu when on mobile/smaller screen (< */
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hb-nav {
+        display: flex;
+    }
+}
