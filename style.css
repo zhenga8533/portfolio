@@ -18,9 +18,44 @@ p {
     color: rgb(85, 85, 85)
 }
 
+
 /* Transition for links and buttons */
 a, .btn {
     transition: all 300ms ease;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-c1, .btn-c2 {
+    border: rgb(50, 50, 50) 0.1rem solid;
+}
+
+.btn-c1:hover, .btn-c2:hover {
+    cursor: pointer;
+}
+
+.btn-c1, .btn-c2:hover {
+    background: rgb(50, 50, 50);
+    color: white;
+}
+
+.btn-c1:hover {
+    background: black;
+}
+
+.btn-c2:hover {
+    border: white 0.1rem solid;
 }
 
 /* Desktop Navigation Bar */
@@ -131,4 +166,60 @@ nav {
 }
 .hb-icon span:first-child {
     transform: none;
+}
+
+
+/* Section Profile Body */
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section-picture {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+    clip-path: circle();
+}
+
+.section-text {
+    align-self: center;
+    text-align: center;
+}
+
+.section-text p {
+    font-weight: 600;
+}
+
+.section-text2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
 }
