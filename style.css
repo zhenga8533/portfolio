@@ -169,7 +169,7 @@ nav {
 }
 
 
-/* Section Profile Body */
+/* Profile Section */
 section {
     padding-top: 4vh;
     height: 96vh;
@@ -202,6 +202,10 @@ section {
     font-weight: 600;
 }
 
+.section-text1 {
+    text-align: center;
+}
+
 .section-text2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
@@ -222,4 +226,52 @@ section {
 .icon {
     cursor: pointer;
     height: 2rem;
+}
+
+/* About Section */
+#about {
+    position: relative;
+    padding: 4vh 0;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, .about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(50, 50, 50) 0.1rem solid;
+    border-color: rgb(164, 164, 164);
+    text-align: center;
+}
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    height: 80%;
 }
