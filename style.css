@@ -295,7 +295,8 @@ section {
 .skills-details-container {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 2rem;
 }
 
 .article-container {

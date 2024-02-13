@@ -6,6 +6,14 @@
         <title>My Portfolio</title>
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="mediaqueries.css"/>
+
+        <!-- Load sections -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script> $(() => {
+            $("#profile").load("sections/profile.html");
+            $("#about").load("sections/about.html");
+            $("#skills").load("sections/skills.html");
+        }); </script> 
     </head>
     <body>
         <!-- Navigation Bar (desktop/mobile) -->
@@ -36,163 +44,12 @@
                 </div>
             </div>
         </nav>
-        <!-- Profile section -->
-        <section id="profile">
-            <div class="section-picture">
-                <img src="./assets/profile.jpg" alt="Allen Zheng profile picture">
-            </div>
-            <div class="section-text">
-                <p class="section-text1">Greetings traveler, my name is</p>
-                <h1 class="section-title">Allen Zheng</h1>
-                <p class="section-text2">CSE Student</p>
-                <div class="btn-container">
-                    <button class="btn btn-c2" onclick="window.open('./assets/resume.pdf')">Resume</button>
-                    <button class="btn btn-c1" onclick="location.href='./#contact'">Contact</button>
-                </div>
-                <div id="socials-container">
-                    <img 
-                        src="./assets/linkedin.png" 
-                        alt="LinkedIn logo" 
-                        class="icon" 
-                        onclick="window.open('https://www.linkedin.com/in/zheng1996/');return false;" 
-                    />
-                    <img 
-                        src="./assets/github.png" 
-                        alt="Github logo" 
-                        class="icon" 
-                        onclick="window.open('https://github.com/zhenga8533');return false;" 
-                    />
-                </div>
-            </div>
-        </section>
-        <!-- About Section -->
-        <section id="about">
-            <p class="section-text1">Get to Know More</p>
-            <p class="section-title">About Me</p>
-            <div class="section-container">
-                <img src="./assets/profile.jpg" alt="profile picture" class="about-pic"/>
-                <div class="about-details-container">
-                    <div class="about-containers">
-                        <div class="details-container">
-                            <img class="icon" src="./assets/experience.png" alt="experience icon">
-                            <h3>Experience</h3>
-                            <p>
-                                Software Engineering<br/>3+ years
-                                <br/><br/>
-                                Professional Experience<br/>&lt 1 year
-                            </p>
-                        </div>
-                        <div class="details-container">
-                            <img class="icon" src="./assets/education.png" alt="education icon">
-                            <h3>Education</h3>
-                            <p>
-                                Bachlor of Science in Computer Science and Engineering<br/>The Ohio State University (GPA: 3.83)
-                            </p>
-                        </div>
-                    </div>
-                    <div class="text-container">
-                        <p>
-                            Quesada, que carnes, enjuto de los de vellorí de lanza en astillero, adarga antigua, rocín como tomaba la edad de nuestro cuenta años; era de los 
-                            cincuenta años; era de la caza. Quieren decir que en esto importa poco a nuestro cuenta años; era de la Mancha, de complexión recia, seco de rostro, 
-                            gran madrugador y amigo de rostro, gran madrugador y amigo de la verdad.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <img src="./assets/arrow.png" alt="arrow icon" class="arrow icon" onclick="location.href='./#skills'">
-        </section>
-        <!-- Skills Section -->
-        <section id="skills">
-            <p class="section-text1">Explore My</p>
-            <h1 class="section-title">Skills</h1>
-            <div class="skills-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <h2 class="skills-subtitle">Languages</h2>
-                        <div class="article-container">
-                            <article>
-                                <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                                <div>
-                                    <h3>Python</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                                <div>
-                                    <h3>JavaScript</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                                <div>
-                                    <h3>HTML/CSS</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                                <div>
-                                    <h3>Ruby</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                                <div>
-                                    <h3>Java</h3>
-                                    <p>Basic</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-containers">
-                    <div class="details-container">
-                        <h2 class="skills-subtitle">Soft Skills</h2>
-                        <div class="article-container">
-                            <article>
-                                <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                                <div>
-                                    <h3>Teamwork</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                                <div>
-                                    <h3>Problem Solving</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                                <div>
-                                    <h3>Adaptability</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                                <div>
-                                    <h3>Communication</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                                <div>
-                                    <h3>Flexibility</h3>
-                                    <p>Basic</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="./assets/arrow.png" alt="arrow icon" class="arrow icon" onclick="location.href='./#projects'">
-        </section>
+        
+        <!-- Sections -->
+        <section id="profile"></section>
+        <section id="about"></section>
+        <section id="skills"></section>
+
         <script src="script.js"></script>
     </body>
 </html>
