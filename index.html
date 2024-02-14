@@ -7,11 +7,10 @@
         <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
 
         <!-- Load CSS -->
-        <link rel="stylesheet" href="style.css"/>
-        <link rel="stylesheet" href="mediaqueries.css"/>
+        <link rel="stylesheet" href="./css/style.css"/>
+        <link rel="stylesheet" href="./css/mediaqueries.css"/>
 
         <!-- Load script and section HTML -->
-        <script src="script.js"></script>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script> $(() => {
             $("#profile").load("sections/profile.html");
@@ -19,11 +18,12 @@
             $("#skills").load("sections/skills.html");
             $("#projects").load("sections/projects.html");
             $("#contact").load("sections/contact.html");
-        }); </script> 
+        }); </script>
+        <script src="./js/script.js"></script>
     </head>
 
+    <!-- Header Navbar -->
     <header>
-        <!-- Navigation Bar (desktop/mobile) -->
         <nav id="desktop-nav">
             <div class="logo">Allen Zheng</div>
             <div>
@@ -53,8 +53,8 @@
         </nav>
     </header>
 
+    <!-- Sections -->
     <body>
-        <!-- Sections -->
         <section id="profile"></section>
         <section id="about"></section>
         <section id="skills"></section>
@@ -62,6 +62,7 @@
         <section id="contact"></section>
     </body>
     
+    <!-- Footer Navbar -->
     <footer>
         <nav>
             <div class="nav-links-container">
