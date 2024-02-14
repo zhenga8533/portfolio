@@ -24,7 +24,6 @@ $(document).ready(() => {
             let srr = 0;
             for (let i = active + 1; i < projects.length; i++) {
                 srr++;
-                console.log(projects[i]);
                 projects[i].style.transform = `translateX(${120 * srr}px) scale(${1 - 0.2 * srr}) perspective(16px) rotateY(-1deg)`;
                 projects[i].style.zIndex = -srr;
                 projects[i].style.filter = "blur(5px)";
@@ -34,12 +33,18 @@ $(document).ready(() => {
             let sll = 0;
             for (let i = active - 1; i >= 0; i--) {
                 sll++;
-                console.log(projects[i]);
                 projects[i].style.transform = `translateX(${-120 * sll}px) scale(${1 - 0.2 * sll}) perspective(16px) rotateY(1deg)`;
                 projects[i].style.zIndex = -sll;
                 projects[i].style.filter = "blur(5px)";
                 projects[i].style.opacity = sll > 2 ? 0 : 0.6;
             }
+
+            // Toggle project arrow display
+            if (active === 0) prevProject.style.display = "none";
+            else prevProject.style.display = "";
+
+            if (active === projects.length - 1) nextProject.style.display = "none";
+            else nextProject.style.display = "";
         }
         loadProjects();
 
