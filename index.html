@@ -3,11 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Portfolio</title>
+        <title>Allen Zheng Portfolio</title>
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="mediaqueries.css"/>
 
-        <!-- Load sections -->
+        <!-- Load script and section HTML -->
+        <script src="script.js"></script>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script> $(() => {
             $("#profile").load("sections/profile.html");
@@ -17,7 +18,8 @@
             $("#contact").load("sections/contact.html");
         }); </script> 
     </head>
-    <body>
+
+    <header>
         <!-- Navigation Bar (desktop/mobile) -->
         <nav id="desktop-nav">
             <div class="logo">Allen Zheng</div>
@@ -46,15 +48,15 @@
                 </div>
             </div>
         </nav>
+    </header>
 
+    <body>
         <!-- Sections -->
         <section id="profile"></section>
         <section id="about"></section>
         <section id="skills"></section>
         <section id="projects"></section>
         <section id="contact"></section>
-
-        <script src="script.js"></script>
     </body>
     
     <footer>
@@ -62,7 +64,7 @@
             <div class="nav-links-container">
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>

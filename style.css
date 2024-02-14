@@ -18,6 +18,32 @@ p {
     color: rgb(85, 85, 85)
 }
 
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+
+/* Small Detail Styling */
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+.logo {
+    font-size: 2rem;
+}
+.logo:hover {
+    cursor: default;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
 
 /* Transition for links and buttons */
 a, .btn {
@@ -58,6 +84,7 @@ a, .btn {
     border: white 0.1rem solid;
 }
 
+
 /* Desktop Navigation Bar */
 nav {
     display: flex;
@@ -85,12 +112,6 @@ nav {
     text-decoration-color: rgb(192, 192, 192);
 }
 
-.logo {
-    font-size: 2rem;
-}
-.logo:hover {
-    cursor: default;
-}
 
 /* Mobile Hamburger Navigation Bar */
 #hb-nav {
@@ -122,11 +143,12 @@ nav {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     width: fit-content;
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+    z-index: 1;
 }
 
 .hb-links a {
@@ -142,6 +164,7 @@ nav {
 .hb-links li {
     list-style: none;
 }
+
 .hb-links.open {
     max-height: 300px;
 }
@@ -169,7 +192,7 @@ nav {
 }
 
 
-/* Profile Section */
+/* General Section Styling */
 section {
     padding-top: 4vh;
     height: 96vh;
@@ -178,19 +201,9 @@ section {
     min-height: fit-content;
 }
 
-#profile {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    height: 80vh;
-}
-
-.section-picture {
-    display: flex;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
-    clip-path: circle();
+.section-title {
+    font-size: 3rem;
+    text-align: center;
 }
 
 .section-text {
@@ -211,56 +224,18 @@ section {
     margin-bottom: 1rem;
 }
 
-.section-title {
-    font-size: 3rem;
-    text-align: center;
-}
-
-#socials-container {
+.section-container {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
-    gap: 1rem;
+    gap: 4rem;
+    height: 80%;
 }
 
-.icon {
-    cursor: pointer;
-    height: 2rem;
-}
-
-/* About Section */
-#about {
-    position: relative;
-    padding: 4vh 0;
-}
-
-.about-containers {
+.section-containers {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-}
-
-.about-details-container {
-    justify-content: center;
-    flex-direction: column;
-}
-
-.about-containers, .about-details-container {
     display: flex;
-}
-
-.about-pic {
-    display: flex;
-    height: 300px;
-    width: 300px;
-    margin: auto 0;
-    clip-path: circle();
-}
-
-.arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
 }
 
 .details-container {
@@ -273,16 +248,55 @@ section {
     text-align: center;
 }
 
-.section-container {
+
+/* Profile Section */
+#profile {
     display: flex;
     justify-content: center;
-    gap: 4rem;
-    height: 80%;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.profile-picture {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+    clip-path: circle();
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+
+/* About Section */
+#about {
+    position: relative;
+    padding: 4vh 0;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.about-pic {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    margin: auto 0;
+    clip-path: circle();
 }
 
 /* Skill section */
 #skills {
     position: relative;
+    padding: 4vh 0;
 }
 
 .skills-subtitle {
@@ -340,13 +354,7 @@ article .icon {
     color: black;
 }
 
-.project-btn {
-    color: black;
-    border-color: rgb(163, 163, 163);
-}
-
 /* Contact section */
-
 #contact {
     display: flex;
     justify-content: center;
@@ -378,21 +386,5 @@ article .icon {
 }
   
 .contact-icon {
-    cursor: default;
-}
-  
-.email-icon {
     height: 2.5rem;
-}
-
-
-/* Footer */
-
-footer {
-    height: 26vh;
-    margin: 0 1rem;
-}
-  
-footer p {
-    text-align: center;
 }
