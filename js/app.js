@@ -6,7 +6,16 @@ function toggleMenu() {
     document.querySelector(".hb-icon").classList.toggle("open");;
 }
 
+/**
+ * Load particles script.
+ */
+particlesJS.load('particles-js', '../assets/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+});
 
+/**
+ * Set project cards view.
+ */
 $(document).ready(() => {
     // Load project content
     $("#projects").load("../sections/projects.html", () => {

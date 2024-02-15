@@ -19,7 +19,8 @@
             $("#projects").load("sections/projects.html");
             $("#contact").load("sections/contact.html");
         }); </script>
-        <script src="./js/script.js"></script>
+        <script src="./js/particles.js"></script>
+        <script src="./js/app.js"></script>
     </head>
 
     <!-- Header Navbar -->
@@ -55,11 +56,15 @@
 
     <!-- Sections -->
     <body>
-        <section id="profile"></section>
-        <section id="about"></section>
-        <section id="skills"></section>
-        <section id="projects"></section>
-        <section id="contact"></section>
+        <div class="body-particles">
+            <section id="profile"></section>
+            <section id="about"></section>
+            <section id="skills"></section>
+            <section id="projects"></section>
+            <section id="contact"></section>
+        </div>
+
+        <div id="particles-js"></div>
     </body>
     
     <!-- Footer Navbar -->
