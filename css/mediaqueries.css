@@ -27,6 +27,10 @@
         margin-top: 2rem;
         flex-direction: column;
         align-items: center;
+        gap: 0;
+    }
+    #profile {
+        margin-bottom: 0;
     }
     #profile,
     .section-container {
@@ -39,6 +43,9 @@
     .section-container {
         height: fit-content;
     }
+    .section-containers {
+        margin: 1rem;
+    }
     section {
         margin: 0 5%;
     }
@@ -50,16 +57,23 @@
     .about-containers {
         margin-top: 0;
     }
+    .contact-info-upper-container {
+        margin: 2rem;
+    }
+    .project-container {
+        min-height: 80vh;
+        margin-bottom: 6rem;
+    }
 }
   
 @media screen and (max-width: 600px) {
     #contact,
     footer {
-        height: 40vh;
+        height: 30vh;
     }
-    #profile {
-        height: 83vh;
-        margin-bottom: 0;
+    .profile-picture {
+        width: 300px;
+        justify-content: center;
     }
     article {
         font-size: 1rem;
@@ -104,6 +118,9 @@
     }
     .text-container {
         text-align: justify;
+    }
+    .project-title {
+        font-size: 1rem;
     }
 }
 

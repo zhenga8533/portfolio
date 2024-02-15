@@ -316,6 +316,11 @@ section {
     gap: 2rem;
 }
 
+.skill {
+    justify-content: center;
+    text-align: center;
+}
+
 .article-container {
     display: flex;
     text-align: initial;
@@ -360,7 +365,7 @@ article .icon {
 
 .project-card {
     position: absolute;
-    width: 40%;
+    width: 36%;
     text-align: center;
     background-color: white;
     border-radius: 2rem;
@@ -368,7 +373,7 @@ article .icon {
     border-color: rgb(164, 164, 164);
     padding: 25px;
     transition: 0.5s;
-    left: 30%;
+    left: 32%;
     bottom: 0%;
 }
 
