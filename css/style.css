@@ -27,8 +27,9 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 100;
-  }
+    z-index: 1;
+    margin-top: 13vh;
+}
 
 html {
     scroll-behavior: smooth;
