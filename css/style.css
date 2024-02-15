@@ -253,10 +253,11 @@ section {
 
 /* Profile Section */
 #profile {
+    position: relative;
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
+    height: 70vh;
 }
 
 .profile-picture {
@@ -360,7 +361,6 @@ article .icon {
 .project-card {
     position: absolute;
     width: 40%;
-    height: 100%;
     text-align: center;
     background-color: white;
     border-radius: 2rem;
@@ -407,7 +407,7 @@ article .icon {
     border: none;
     font-size: xxx-large;
     font-weight: bold;
-    left: 50px;
+    left: 0;
     z-index: 99;
 }
 
@@ -417,7 +417,7 @@ article .icon {
 
 #next-project {
     left: unset;
-    right: 50px;
+    right: 0;
 }
 
 /* Contact section */
@@ -425,9 +425,8 @@ article .icon {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
 }
-  
+
 .contact-info-upper-container {
     display: flex;
     justify-content: center;
@@ -436,7 +435,7 @@ article .icon {
     border-color: rgb(163, 163, 163);
     background: (250, 250, 250);
     background-color: white;
-    margin: 2rem auto;
+    margin: 20vh auto;
     padding: 0.5rem;
 }
   
