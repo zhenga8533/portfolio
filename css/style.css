@@ -139,6 +139,7 @@ nav {
 /* Mobile Hamburger Navigation Bar */
 #hb-nav {
     display: none;
+    margin: 0 -10vw;
 }
 
 .hb-menu {
