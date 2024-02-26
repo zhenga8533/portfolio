@@ -369,7 +369,7 @@ article .icon {
     width: 36%;
     text-align: center;
     background-color: white;
-    border-radius: 2rem;
+    border-radius: 1rem;
     border: rgb(50, 50, 50) 0.1rem solid;
     border-color: rgb(164, 164, 164);
     padding: 1.5rem;
@@ -380,7 +380,7 @@ article .icon {
 
 .project-img {
     width: 80%;
-    border-radius: 1rem;
+    clip-path: circle();
 }
 
 .project-title {
